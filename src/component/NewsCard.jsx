@@ -21,8 +21,8 @@ const NewsCard = (props) => {
                           and drive innovation. Our AI tools are designed to seamlessly integrate with your existing workflows.
                       </p>
                   </div>
-                  <div className="news_detail d-flex align-items-center justify-content-between">
-                      <div className="d-flex gap-3 align-items-center small ">
+                  <div className="news_detail d-flex align-items-center justify-content-between gap-2 flex-wrap">
+                      <div className="d-flex gap-3 align-items-center small  justify-content-between w-100">
                           <p className='text-white mb-0'>
                               <span className='active_news '></span>
                               vor 5 Std
@@ -30,7 +30,7 @@ const NewsCard = (props) => {
                           <span className='category'>Theme 1</span>
                           <span className='category'>Theme 2</span>
                       </div>
-                      <div className="d-flex align-items-center gap-3 small">
+                      <div className="d-flex align-items-center gap-3 small justify-content-between w-100">
                           <span className='post_time'>5 min</span>
                           <CircularProgress progress={value+ 20} />
                       </div>

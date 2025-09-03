@@ -95,7 +95,7 @@ const CustomizeArticlePanel = () => {
                     <label className="custom-label">Additional Inclusion</label>
                     <div className="self_togle_wrap row g-2">
                         {["Interviews", "Refferences", "Narratives"].map((opt) => (
-                            <div className="col-md-12 col-4" key={opt}>
+                            <div className="col-md-12 col-lg-4" key={opt}>
                             <span
                                 key={opt}
                                 className={`custom-toggle ${inclusions === opt ? "activetab" : ""}`}
@@ -113,7 +113,7 @@ const CustomizeArticlePanel = () => {
                     <label className="custom-label pb-3">View Perspective</label>
                     <div className="self_togle_wrap row g-2">
                         {["Unbiased", "US", "China", "EU", "UAE", "Russia"].map((opt) => (
-                            <div className="col-md-6 col-4" key={opt}>
+                            <div className="col-md-6 col-lg-4" key={opt}>
                                 <span
                                     className={`custom-toggle w-100 text-center ${perspective === opt ? "activetab" : ""}`}
                                     onClick={() => setPerspective(opt)}
