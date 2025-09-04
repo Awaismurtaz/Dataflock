@@ -1,8 +1,9 @@
 import React,{ useState } from "react";
 import NewsCard from "../component/NewsCard.jsx";
-import NewsComments from "../component/TopNews.jsx";
+import AllNews from "../component/AllNews.jsx";
 import { FaThLarge, FaList } from "react-icons/fa"; // FontAwesome icons
 import { Link } from "react-router-dom";
+import Allnews from "./NewsList.jsx";
 
 const MatchingNews = () => {
     const [viewMode, setViewMode] = useState("list"); 
@@ -73,7 +74,7 @@ const MatchingNews = () => {
                                 </div>
                                 {[...Array(10)].map((_, index) => (
                                     <div className="mt-4" key={index}>
-                                        <NewsComments />
+                                        <Allnews />
                                     </div>
                                 ))}
                             </div>

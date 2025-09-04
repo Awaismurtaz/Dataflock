@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Allnews from "./pages/Allnews";
+import NewsList from "./pages/NewsList";
 import Layout from "./layout/Layout";
 import MatchingNews from "./pages/MatchingNews";
 import NewsView from "./pages/NewsView";
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Allnews />} />
+          <Route index element={<NewsList />} />
           <Route path="/matching-news" element={<MatchingNews />} />
           <Route path="/news-view" element={<NewsView />} />
         </Route>

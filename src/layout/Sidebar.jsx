@@ -45,7 +45,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="/">
               <img src={NewsIcon} alt="" />
               <span>News</span>
             </Link>
@@ -119,7 +119,7 @@ const Sidebar = () => {
       {/* User Section */}
       <div className="user_section d-flex align-items-center gap-2 pt-4">
         <img src={UserAvatar} alt="User" className="user_avatar" />
-        <div>
+        <div className="user_detail">
           <h6 className="text-white ">Michael Smith</h6>
           <small className="text-white">admin@example.com</small>
         </div>

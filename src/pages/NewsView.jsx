@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import WomenImage from "../assets/images/women_image.png";
-import HotNewsComments from "../component/HotNewsCard.jsx";
-import NewsComments from "../component/TopNews.jsx";
 import DownloadIcon from "../assets/images/download.svg";
 import ShareIcon from "../assets/images/share.svg";
 import PrintIcon from "../assets/images/print.svg";

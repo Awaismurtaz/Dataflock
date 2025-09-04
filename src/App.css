@@ -658,26 +658,26 @@ body {
 }
 
 /* customize panel */
-.custom_panel_box .bg_glassEffect{
+.custom_panel_box .bg_glassEffect {
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 0 4px rgba(116, 121, 255, 0.2);
-  padding: 20px;
+  padding: 16px;
   border-radius: 12px;
   color: var(--white);
 }
 
-.custom-section-title{
+.custom-section-title {
   font-family: "NeoSans";
   text-align: center;
 }
-.custom-customize-box .custom-label{
+.custom-customize-box .custom-label {
   font-size: 14px;
   font-weight: 300;
   padding-bottom: 10px;
 }
-.custom-customize-box .custom_tab{
+.custom-customize-box .custom_tab {
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -685,13 +685,15 @@ body {
   padding: 8px;
   border-radius: 40px;
 }
-.custom-toggle{
-  padding: 6px 20px;
+.custom-toggle {
+  padding: 6px 10px;
   cursor: pointer;
   text-align: center;
+  font-size: 12px;
+  white-space: nowrap;
 }
-.activetab{
-   background: rgba(255, 255, 255, 0.02);
+.activetab {
+  background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 0 4px rgba(116, 121, 255, 0.2);
@@ -699,17 +701,17 @@ body {
   border-radius: 40px;
   color: var(--purple);
 }
-.self_togle_wrap .custom-toggle{
-     background: rgba(255, 255, 255, 0.02);
+.self_togle_wrap .custom-toggle {
+  background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   box-shadow: inset 0 0 4px rgba(116, 121, 255, 0.2);
-  padding: 9px 20px;
+  padding: 9px 10px;
   border-radius: 40px;
+  font-size: 12px;
   cursor: pointer;
-  display: block;
 }
-.self_togle_wrap .custom-toggle .activeTab{
+.self_togle_wrap .custom-toggle .activeTab {
   color: var(--purple);
 }
 
@@ -728,7 +730,6 @@ body {
   max-width: 400px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
 }
-
 
 .share-option {
   display: flex;
@@ -851,4 +852,26 @@ body {
   .hot_news_detail {
     flex-wrap: wrap;
   }
+}
+@media (max-width: 1025px) {
+  .sidebar_wrap {
+    width: 80px;
+    padding: 4px;
+  }
+  .sidebar_wrap .user_section .user_detail,
+  .sidebar_wrap .sidebar__menu__list li span,
+  .sidebar_wrap .brand_text,
+  .sidebar_wrap .user_info {
+    display: none;
+  }
+  .sidebar_wrap .brand_section,
+  .sidebar_wrap .user_section,
+  .sidebar__menu__list li a {
+    justify-content: center;
+  }
+
+  /* main_content */
+      .main_layout_content {
+        margin-left: 80px;
+    }
 }

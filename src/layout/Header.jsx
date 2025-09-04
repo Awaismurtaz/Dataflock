@@ -10,16 +10,18 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const handleBack = () => {
-    navigate(-1); // go back to the previous page
+  const handleGoBack = (event) => {
+    event.preventDefault(); 
+    navigate(-1); 
   };
+
   return (
     <div className="header-container ">
       <div className="row">
         <div className="col-md-8">
           <div className='d-flex gap-2 align-items-center  w-100'>
-            {location.pathname === "/matching-news" && (
-              <div className="serach_icon" onClick={handleBack}>
+            {location.pathname === "/" ? "" : (
+              <div className="serach_icon" onClick={handleGoBack} role="button" >
                 <img src={rightArrow} alt="Back" className="icon back-icon" />
               </div>
             )}
